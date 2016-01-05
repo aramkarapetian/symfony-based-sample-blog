@@ -27,6 +27,12 @@ class Article
     protected $description;
     
     /**
+     *
+     * @ORM\OneToMany(targetEntity="Comment", mappedBy="article")
+     */
+    protected $comments;
+    
+    /**
      * 
      * @param string $title
      * @param string $description

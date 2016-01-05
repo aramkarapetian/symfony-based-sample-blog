@@ -9,10 +9,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use AppBundle\Entity\Article;
 
-class PostController extends Controller
+class ArticleController extends Controller
 {
     /**
-     * @Route("/posts", name="posts_put")
+     * @Route("/articles", name="articles_put")
      * @Method({"PUT"})
      */
     public function putAction(Request $request)
@@ -29,7 +29,7 @@ class PostController extends Controller
     }
     
     /**
-     * @Route("/posts", name="posts_get")
+     * @Route("/articles", name="articles_get")
      * @Method({"GET"})
      */
     public function getAction()
